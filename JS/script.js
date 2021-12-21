@@ -39,13 +39,13 @@ console.log ('Prezzo intero', totalPrice)
 
 // 4 Primo sconto per minorenni 
 
-const minorPrice = (totalPrice - ((totalPrice * 20) / 100))
+const minorPrice = (totalPrice - ((totalPrice * 20) / 100)).toFixed(2)
 
 console.log ('Prezzo per i minorenni', minorPrice)
 
 // 5 Sconto per i 65enni 
 
-const elderPrice = (totalPrice - ((totalPrice * 40) / 100))
+const elderPrice = (totalPrice - ((totalPrice * 40) / 100)).toFixed(2)
 
 console.log ('Prezzo per i 65enni', elderPrice)
 
