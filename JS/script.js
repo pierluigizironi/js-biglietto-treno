@@ -33,5 +33,18 @@ console.log ('Qual è la tua età?', userAge)
 
 const ticketPrice = 0.21
 
-console.log (numberKm * ticketPrice)
+const totalPrice = numberKm * ticketPrice
 
+console.log ('Prezzo intero', totalPrice)
+
+// 4 Primo sconto per minorenni 
+
+const minorPrice = (totalPrice - ((totalPrice * 20) / 100))
+
+console.log ('Prezzo per i minorenni', minorPrice)
+
+// 5 Sconto per i 65enni 
+
+const elderPrice = (totalPrice - ((totalPrice * 40) / 100))
+
+console.log ('Prezzo per i 65enni', elderPrice)
