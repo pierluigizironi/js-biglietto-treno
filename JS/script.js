@@ -19,12 +19,19 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 */
 
 
-// 1 Chiedo qual è il nome
+// 1 Chiedo all'utente quanti chilometri vuole percorrere 
 
 const numberKm = prompt('Quanti chilometri vuole percorrere?')
 console.log ('Quanti chilometri vuole pecorrere?', numberKm)
 
-// 2 Chiedo qual è il cognome 
+// 2 Chiedo all'utente la sua età
 
 const userAge = prompt('Qual è la tua età?')
 console.log ('Qual è la tua età?', userAge)
+
+// 3 Moltiplico i chilometri dichiarati con il prezzo del biglietto 
+
+const ticketPrice = 0.21
+
+console.log (numberKm * ticketPrice)
+
