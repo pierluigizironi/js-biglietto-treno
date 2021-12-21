@@ -48,3 +48,4 @@ console.log ('Prezzo per i minorenni', minorPrice)
 const elderPrice = (totalPrice - ((totalPrice * 40) / 100))
 
 console.log ('Prezzo per i 65enni', elderPrice)
+
