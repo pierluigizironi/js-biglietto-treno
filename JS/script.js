@@ -52,10 +52,12 @@ console.log ('Prezzo per i 65enni', elderPrice)
 // Utilizzo degli if 
 
 if (userAge > 18 && userAge < 65) {
-    console.log(`Il prezzo del biglietto è di ${totalPrice}`);
-} else if (userAge < 18) {
-    console.log(`Il prezzo del biglietto per i minori è di ${minorPrice}`);
-} else if (userAge > 65 ) {
-    console.log(`Il prezzo del biglietto per i 65enni è di ${elderPrice}`);
+    console.log(`Il prezzo del biglietto è di ${totalPrice} €`);
+    document.getElementById('ticketcalculator').innerHTML = ` Il prezzo del biglietto è il seguente: <strong>${totalPrice} €</strong> `
+} else if (userAge <= 18) {
+    console.log(`Il prezzo del biglietto per i minori è di ${minorPrice} €`);
+    document.getElementById('ticketcalculator').innerHTML = ` Il prezzo del biglietto è il seguente: <strong>${minorPrice} €</strong> `
+} else if (userAge >= 65 ) {
+    console.log(`Il prezzo del biglietto per i 65enni è di ${elderPrice} €`);
+    document.getElementById('ticketcalculator').innerHTML = ` Il prezzo del biglietto è il seguente: <strong>${elderPrice} €</strong> `
 }
-    
